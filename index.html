@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy GIF Example</title>
+  <style>
+    .notification {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      color: black;
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .notification.show {
+      opacity: 1;
+    }
+    img {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="gifContainer">
+    <img id="gifImage" src="gifs/1.gif" alt="GIF">
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
